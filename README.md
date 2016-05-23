@@ -3,7 +3,7 @@
 ##Project Overview
 Retrieve Github public repositories.
 
-##The Project Used The Following:
+##The Project Used The Following
 * RxJava
 * RxAndroid
 * Retrofit
@@ -12,7 +12,7 @@ Retrieve Github public repositories.
 * Tint color for Buttons
 
 ##The Setup
-
+###Dependencies
 ```
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -24,6 +24,10 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:23.4.0'
     compile 'com.android.support:cardview-v7:23.4.0'
 }
+```
+###AndroidManifest
+```
+<uses-permission android:name="android.permission.INTERNET" /> 
 ```
 ##How To Use
 Click **Fetch** to get the repositories list and **Clear** to clear the list.
