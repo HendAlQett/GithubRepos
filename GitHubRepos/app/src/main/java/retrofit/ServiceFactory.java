@@ -3,9 +3,9 @@ package retrofit;
 /**
  * Created by hend on 5/23/16.
  */
-public class RestClient {
+public class ServiceFactory {
 
-    static <T> T createRetrofitService(final Class<T> clazz, final String endPoint) {
+    public static <T> T createRetrofitService(final Class<T> clazz, final String endPoint) {
         final RestAdapter restAdapter = new RestAdapter.Builder()
                 .setEndpoint(endPoint)
                 .build();
