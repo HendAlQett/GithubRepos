@@ -17,21 +17,26 @@
             android:id="@+id/button_clear"
             android:layout_width="88dp"
             android:layout_height="wrap_content"
-            android:background="#008B75"
+            android:background="@color/colorPrimary"
             android:layout_weight="1"
             android:layout_marginRight="10dp"
-            android:textColor="#ffffff"
+            android:textColor="@android:color/white"
             android:text="Clear" />
         <Button
             android:id="@+id/button_fetch"
             android:layout_width="88dp"
             android:layout_height="wrap_content"
-            android:background="#008B75"
+            android:background="@color/colorPrimary"
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
-            android:textColor="#ffffff"
+            android:textColor="@android:color/white"
             android:text="Fetch" />
 
     </LinearLayout>
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </RelativeLayout>
