@@ -10,8 +10,8 @@ import rx.Observable;
  * Created by hend on 5/23/16.
  */
 public interface GithubService {
-    String SERVICE_ENDPOINT="https://api.github.com";
+    String SERVICE_ENDPOINT = "https://api.github.com";
 
-    @GET("users/{login}")
+    @GET("/users/{login}")
     Observable<Github> getUser(@Path("login") String login);
 }
